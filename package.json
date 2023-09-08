@@ -1,6 +1,6 @@
 {
   "name": "@SamagraX-RCW/bitstring",
-  "version": "3.1.1-0",
+  "version": "3.2.0",
   "description": "Bitstring module tweaked to work with TypeScript and NestJS",
   "license": "BSD-3-Clause",
   "exports": "./dist/index.js",
