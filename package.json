@@ -3,25 +3,30 @@
   "version": "3.1.1-0",
   "description": "Bitstring module for universal JavaScript",
   "license": "BSD-3-Clause",
-  "type": "module",
+  "type": "commonjs",
   "exports": "./lib/index.js",
   "files": [
     "lib/**/*.js"
   ],
   "scripts": {
     "test": "npm run test-node",
-    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.js tests/*.spec.js",
+    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.mjs tests/*.spec.mjs",
     "test-karma": "karma start karma.conf.cjs",
     "coverage": "cross-env NODE_ENV=test c8 npm run test-node",
     "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly --reporter=text-summary --reporter=text npm run test-node",
     "coverage-report": "c8 report",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "babel lib --out-dir dist"
   },
   "dependencies": {
+    "@babel/cli": "^7.22.15",
     "base64url-universal": "^2.0.0",
     "pako": "^2.0.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
     "c8": "^7.11.3",
     "chai": "^4.3.6",
     "chai-bytes": "^0.1.2",

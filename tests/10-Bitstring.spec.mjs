@@ -1,7 +1,7 @@
 /*!
  * Copyright (c) 2020-2023 Digital Bazaar, Inc. All rights reserved.
  */
-import {Bitstring} from '../lib/index.js';
+import {Bitstring} from '../lib/index.mjs';
 
 describe('Bitstring', () => {
   it('should create a left-to-right bits instance by default', async () => {
