@@ -1,33 +1,20 @@
 # Bitstring
-A Bitstring module for universal JavaScript.
+This bitstring module is a hacky tweak to make the [original bitstring package](https://github.com/digitalbazaar/bitstring) play nice with typescript.
 
 ## Install
 
 To install get the latest version from NPM:
 
 ```
-npm install @digitalbazaar/bitstring
+npm install @sunbird-rc/bitstring
 ```
 
 To install locally for development:
 
 ```
-git clone https://github.com/digitalbazaar/bitstring.git
+git clone https://github.com/techsavvyash/bitstring.git
 cd bitstring
 npm install
-```
-
-## Usage
-
-```js
-import {Bitstring} from '@digitalbazaar/bitstring';
-
-// You can make a new instance by passing in a length
-const bitstring = new Bitstring({length: 10});
-
-// OR by passing in a buffer
-const buffer = Uint8Array.from([255]);
-const bitstring = new Bitstring({buffer});
 ```
 
 ## API
