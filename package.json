@@ -1,6 +1,6 @@
 {
   "name": "@sunbird-rc/bitstring",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Bitstring module tweaked to work with TypeScript and NestJS",
   "license": "BSD-3-Clause",
   "exports": "./dist/index.js",
@@ -48,20 +48,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/bitstring"
+    "url": "https://github.com/techsavvyash/bitstring"
   },
   "keywords": [
     "bitstring"
   ],
   "author": {
-    "name": "Digital Bazaar, Inc.",
-    "email": "support@digitalbazaar.com",
-    "url": "https://digitalbazaar.com/"
+    "name": "Yash Mittal",
+    "email": "mittal.yash12@hotmail.com",
+    "url": "https://github.com/techsavvyash"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/bitstring/issues"
+    "url": "https://github.com/techsavvyash/bitstring/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/bitstring",
+  "homepage": "https://github.com/techsavvyash/bitstring",
   "engines": {
     "node": ">=16"
   },
